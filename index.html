@@ -9,23 +9,30 @@
 
 </head>
 <body>
-    <!-- navbar -->
-        <nav class="navbar">
-            <div class="logo">
-                <div class="logo-img">
-                    <img src="img/logo.png" alt="logo">
-                </div>
-                <h1>WL Alumunium</h1>
-            </div>
-            <div class="nav-links">
-                    <a href="#">Beranda</a>
-                    <a href="about">Tentang Kami</a>
-                    <a href="services.html">Produk</a>
-                    <a href="contact.html">Testimoni</a>
-            </div>
-        </nav>  
+ <!-- navbar -->
+<nav class="navbar">
+    <div class="logo">
+        <div class="logo-img">
+            <img src="img/logo.png" alt="Logo WL Alumunium">
+        </div>
+        <h1>WL Alumunium</h1>
+    </div>
+    
+    <!-- Button untuk membuka navbar -->
+    <button class="nav-toggle" onclick="toggleMenu()">☰</button>
 
-        <!-- navbar end-->
+    <!-- Link Navigasi -->
+    <div class="nav-links">
+        <a href="#">Beranda</a>
+        <a href="about.html">Tentang Kami</a>
+        <a href="services.html">Produk</a>
+        <a href="contact.html">Testimoni</a>
+    </div>
+</nav>
+<!-- navbar end -->
+
+
+
 
         <!-- beranda -->
         <section class="beranda" id="beranda">
@@ -36,11 +43,11 @@
                 <div class="beranda-content">
                     <h1>Wajan Andalan</h1>
                     <h3>Masak Lebih Mudah<br>Rasa Lebih Istimewa!</h3>
-                    <p>Dengan material premium dan proses produksi modern, kami<br> menghadirkan peralatan masak yang tahan lama, ringan, dan efisien<br> dalam menghantarkan panas.</p>
+                    <p>Dengan material premium dan proses produksi modern, kami menghadirkan peralatan masak yang tahan lama, ringan, dan efisien dalam menghantarkan panas.</p>
                     <button class="btn">Beli Sekarang</button>
                 </div>
                 <div class="beranda-img">
-                    <img src="img/content 1.png" alt="">
+                    <img src="img/content 1.jpg" alt="">
                 </div>
             </div>
         </section>
@@ -68,8 +75,6 @@
                 </div>
             </div>
         </section>
-        
-        
         <!-- tentang end -->
 
         <!-- produk terlaris start -->   
@@ -104,7 +109,7 @@
         <!-- produk terlaris end -->
 
 
-        <!-- produk kami start -->
+      <!-- produk kami start -->
         <section class="catalog-wrapper">
             <div class="section-title">
                 <h2>Produk Kami</h2>
