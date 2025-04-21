@@ -1,7 +1,13 @@
+/* 
+UJIKOM BY HAIDAR BAGAS FAIZ RAJA
+IDN BOARDING SCHOOL PAMIJAHAN BOGOR
+2025
+*/
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
 *{
     margin: 0;
     padding:0;
+    scroll-behavior: smooth;
 }
 body{
     font-family: 'Inter', sans-serif;
@@ -19,7 +25,7 @@ body{
     box-sizing: border-box;
 }
 
-/* navbar start */
+/* ===== Navbar Section ===== */
 .navbar {
     display: flex;
     justify-content: space-between;
@@ -28,22 +34,21 @@ body{
     background-color: #222;
     color: #D0C1C2;
     z-index: 999;
-    position: fixed; /* berubah dari relative ke fixed */
-    top: 0; /* supaya selalu di atas */
+    position: fixed; 
+    top: 0;
     left: 0;
     width: 100%;
     max-width: 100vw;
     padding: 1rem;
 }
 
-/* Tambahan: berikan padding-top pada elemen setelah navbar agar tidak tertutup */
 body {
     margin: 0;
     padding: 0;
 }
 
 main {
-    padding-top: 80px; /* sesuaikan dengan tinggi navbar */
+    padding-top: 80px; 
 }
 
 @keyframes fadeIn {
@@ -167,9 +172,9 @@ main {
         width: 3rem;
     }
 }
-/* navbar end */
+/* ===== Navbar Section END ===== */
 
-/* beranda start */
+/* ===== Beranda Section ===== */
 .beranda {
     position: relative;
     width: 100%;
@@ -180,7 +185,7 @@ main {
     overflow: hidden;
     padding: 4rem 1rem;
     opacity: 0;
-    animation: fadeIn 1s forwards; /* Menambahkan animasi fade-in saat halaman dimuat */
+    animation: fadeIn 1s forwards; 
 }
 
 .grid {
@@ -206,7 +211,7 @@ main {
     gap: 3rem;
     opacity: 0;
     transform: translateY(30px);
-    animation: slideIn 1s ease-out 0.5s forwards; /* Animasi slide-in */
+    animation: slideIn 1s ease-out 0.5s forwards; 
 }
 
 .beranda-content {
@@ -257,7 +262,7 @@ main {
     width: 100%;
     opacity: 0;
     transform: translateY(30px);
-    animation: slideIn 1s ease-out 1s forwards; /* Animasi slide-in */
+    animation: slideIn 1s ease-out 1s forwards; 
 }
 
 .beranda-img img {
@@ -266,15 +271,11 @@ main {
     height: auto;
     border-radius: 10px;
 }
-
-/* Animasi fade-in */
 @keyframes fadeIn {
     to {
         opacity: 1;
     }
 }
-
-/* Animasi slide-in */
 @keyframes slideIn {
     from {
         opacity: 0;
@@ -360,11 +361,11 @@ main {
         max-width: 90%;
     }
 }
-/* beranda end */
+/* ===== Beranda Section END ===== */
 
 
 
-/* tentang start */
+/* ===== Tentang Kami Section ===== */
 .about-section {
     position: relative;
     padding: 50px 10%;
@@ -451,8 +452,7 @@ main {
       max-width: 250px;
     }
   }
-  
-  /* Responsive HP */
+    /* Responsive Mobile */
   @media (max-width: 480px) {
     .about-section {
       padding: 40px 5%;
@@ -474,7 +474,7 @@ main {
       max-width: 220px;
     }
   }
-  /* tentang end */
+ /* ===== Tentang Section END ===== */
   
 
   @keyframes fadeUp {
@@ -500,7 +500,7 @@ main {
     animation: fadeUp 0.8s ease forwards;
   }
 
-/* produk terlaris start */
+/* ===== Produk Terlaris Section ===== */
 .product-section {
     padding: 50px 0;
     display: flex;
@@ -532,8 +532,6 @@ main {
     border-bottom: 3px solid rgba(255, 255, 255, 0.6);
     display: inline-block;
 }
-
-/* Product Container */
 .product-container {
     margin-top: 3rem;
     display: flex;
@@ -634,8 +632,6 @@ main {
         text-align: center;
     }
 }
-
-/* animasi fade-up */
 .fade-up {
     opacity: 0;
     transform: translateY(50px);
@@ -646,9 +642,8 @@ main {
     opacity: 1;
     transform: translateY(0);
 }
-/* produk terlaris end */
-
-/* Produk Kami Start */
+/* ==== Produk Terlaris Section END ===== */
+/* ===== Produk Kami Section ===== */
 .catalog-wrapper {
     display: flex;
     flex-direction: column;
@@ -729,8 +724,6 @@ main {
     margin-bottom: 20px;
     font-weight: 300;
 }
-
-/* Animasi Fade-Up */
 .fade-up {
     opacity: 0;
     transform: translateY(40px);
@@ -763,9 +756,9 @@ main {
         gap: 15px;
     }
 }
-/* Produk Kami End */
+/* ===== Produk Kami Section END ===== */
 
-/* galeri start */
+/* ===== Galeri Section ===== */
 .galeri {
     margin-top: 7rem;
 }
@@ -960,7 +953,7 @@ main {
         width: 35px;
         height: 35px;
         font-size: 18px;
-        pointer-events: auto; /* Memastikan tombol bisa diklik */
+        pointer-events: auto; 
         z-index: 1000;
         position: absolute;
         top: 50%;
@@ -977,23 +970,7 @@ main {
         left: calc(100% - 10px);
     }
 }
-/* galeri end */
-
-/* ===== General ===== */
-body {
-    margin: 0;
-    padding: 0;
-    font-family: Arial, sans-serif;
-    background-color: #1a1a1a;
-    color: #fff;
-    scroll-behavior: smooth;
-}
-
-h2, h3, p {
-    margin: 0;
-}
-
-/* ===== Animation Fade-Up ===== */
+/* ===== Galeri Section END ===== */
 .fade-up {
     opacity: 0;
     transform: translateY(50px);
@@ -1074,6 +1051,7 @@ h2, h3, p {
     line-height: 1.5;
     text-align: left;
 }
+/* ===== Testimoni Section END ===== */
 
 /* ===== Footer Section ===== */
 footer {
@@ -1129,10 +1107,6 @@ footer {
     transform: scale(1.2);
 }
 
-.social-icon img {
-    width: 100px;
-    margin-right: 10px;
-}
 
 .footer-right iframe {
     width: 100%;
@@ -1140,8 +1114,6 @@ footer {
     border: none;
     border-radius: 10px;
 }
-
-/* ===== Footer Bottom ===== */
 .footer-bottom {
     text-align: center;
     padding: 20px;
@@ -1175,3 +1147,4 @@ footer {
         height: 250px;
     }
 }
+/* ===== Footer Section END ===== */

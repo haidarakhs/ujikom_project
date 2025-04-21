@@ -73,7 +73,7 @@ document.addEventListener("DOMContentLoaded", () => {
   
     const appearOptions = {
       threshold: 0.2,
-      rootMargin: "0px 0px -50px 0px",
+      rootMargin: "0px 0px -150px 0px",
     };
   
     const appearOnScroll = new IntersectionObserver((entries, observer) => {
@@ -94,12 +94,14 @@ document.addEventListener("DOMContentLoaded", () => {
   
     const showVisibleOnLoad = () => {
       const viewportHeight = window.innerHeight || document.documentElement.clientHeight;
-      faders.forEach(fader => {
-        const rect = fader.getBoundingClientRect();
-        if (rect.top < viewportHeight && rect.bottom > 0) {
-          fader.classList.add("show");
-        }
-      });
+      setTimeout(() => {
+        faders.forEach(fader => {
+          const rect = fader.getBoundingClientRect();
+          if (rect.top < viewportHeight && rect.bottom > 0) {
+            fader.classList.add("show");
+          }
+        });
+      }, 500); 
     };
   
     observeElements();
