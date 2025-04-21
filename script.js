@@ -65,3 +65,44 @@ function animateNavLinks(navLinks) {
             : "none";
     });
 }
+
+
+// animasi
+document.addEventListener("DOMContentLoaded", () => {
+    const faders = document.querySelectorAll(".fade-up, .product-header, .product-card");
+  
+    const appearOptions = {
+      threshold: 0.2,
+      rootMargin: "0px 0px -50px 0px",
+    };
+  
+    const appearOnScroll = new IntersectionObserver((entries, observer) => {
+      entries.forEach(entry => {
+        if (!entry.isIntersecting) return;
+        entry.target.classList.add("show");
+        observer.unobserve(entry.target);
+      });
+    }, appearOptions);
+  
+    const observeElements = () => {
+      faders.forEach(fader => {
+        if (!fader.classList.contains("show")) {
+          appearOnScroll.observe(fader);
+        }
+      });
+    };
+  
+    const showVisibleOnLoad = () => {
+      const viewportHeight = window.innerHeight || document.documentElement.clientHeight;
+      faders.forEach(fader => {
+        const rect = fader.getBoundingClientRect();
+        if (rect.top < viewportHeight && rect.bottom > 0) {
+          fader.classList.add("show");
+        }
+      });
+    };
+  
+    observeElements();
+    window.addEventListener("load", showVisibleOnLoad);
+  });
+  

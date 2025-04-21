@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,169 +9,169 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
 
 </head>
+
 <body>
- <!-- navbar -->
-<nav class="navbar">
-    <div class="logo">
-        <div class="logo-img">
-            <img src="img/logo.png" alt="Logo WL Alumunium">
+    <!-- navbar -->
+    <nav class="navbar">
+        <div class="logo">
+            <div class="logo-img">
+                <img src="img/logo.png" alt="Logo WL Alumunium">
+            </div>
+            <h1>WL Alumunium</h1>
         </div>
-        <h1>WL Alumunium</h1>
-    </div>
+
+        <!-- Button untuk membuka navbar -->
+        <button class="nav-toggle" onclick="toggleMenu()">☰</button>
+
+        <!-- Link Navigasi -->
+        <div class="nav-links">
+            <a href="#home">Beranda</a>
+            <a href="#about">Tentang Kami</a>
+            <a href="#produk">Produk</a>
+            <a href="#testimoni">Testimoni</a>
+        </div>
+    </nav>
+    <!-- navbar end -->
+
+    <!-- beranda -->
+    <section class="beranda" id="home">
+        <div class="grid">
+            <img src="img/grid.png" alt="">
+        </div>
+        <div class="beranda-container">
+            <div class="beranda-content">
+                <h1>Wajan Andalan</h1>
+                <h3>Masak Lebih Mudah<br>Rasa Lebih Istimewa!</h3>
+                <p>Dengan material premium dan proses produksi modern, kami menghadirkan peralatan masak yang tahan
+                    lama, ringan, dan efisien dalam menghantarkan panas.</p>
+                <button class="btn">Beli Sekarang</button>
+            </div>
+            <div class="beranda-img">
+                <img src="img/content 1.jpg" alt="">
+            </div>
+        </div>
+    </section>
+    <!-- beranda end -->
+
+
+    <!-- tentang kami -->
+    <section class="about-section" id="about">
+        <div class="product-header fade-up">
+            <h2>Tentang Kami</h2>
+        </div>
+
+        <div class="about-container fade-up">
+            <div class="about-image fade-up">
+                <img src="img/image about.png" alt="Produk WL Aluminium" />
+            </div>
+            <div class="about-content fade-up">
+                <h3>Dari Pabrik Kami ke<br />Dapur Anda</h3>
+                <p>
+                    Kami, WL Aluminium, telah berdiri sejak 1975, menghadirkan peralatan
+                    masak aluminium berkualitas tinggi untuk memenuhi kebutuhan dapur
+                    masyarakat Indonesia...
+                </p>
+            </div>
+        </div>
+    </section>
+    <!-- tentang kami end -->
+
+
+
+    <!-- produk terlaris start -->
+    <section class="product-section">
+        <div class="product-header fade-up">
+            <h2>Produk Terlaris</h2>
+        </div>
+        <div class="product-container">
+            <div class="product-card fade-up">
+                <img src="img/wajan 1.png" alt="Wajan Kecil" class="product-image">
+                <div class="product-info">
+                    <h2>Wajan Kecil</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    <h3>Rp.50.000</h3>
+                    <button class="buy-button">Beli Sekarang</button>
+                </div>
+            </div>
     
-    <!-- Button untuk membuka navbar -->
-    <button class="nav-toggle" onclick="toggleMenu()">☰</button>
+            <div class="product-card fade-up">
+                <div class="product-info">
+                    <h2>Wajan Besar</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    <h3>Rp.80.000</h3>
+                    <button class="buy-button">Beli Sekarang</button>
+                </div>
+                <img src="img/wajan 1.png" alt="Wajan Besar" class="product-image">
+            </div>
+        </div>
+    </section>
+    
 
-    <!-- Link Navigasi -->
-    <div class="nav-links">
-        <a href="#home">Beranda</a>
-        <a href="#about">Tentang Kami</a>
-        <a href="#produk">Produk</a>
-        <a href="#testimoni">Testimoni</a>
+    <!-- produk terlaris end -->
+
+
+ <!-- produk kami start -->
+<section class="catalog-wrapper" id="produk">
+    <div class="product-header">
+        <h2>Produk Kami</h2>
     </div>
-</nav>
-<!-- navbar end -->
 
-
-
-
-        <!-- beranda -->
-        <section class="beranda" id="home">
-            <div class="grid">
-                <img src="img/grid.png" alt="">
+    <div class="catalog-container">
+        <div class="catalog-item fade-up">
+            <img src="img/wajan 1.png" class="catalog-image" alt="Produk 1">
+            <div class="catalog-info">
+                <h2>Wajan</h2>
+                <p>Lorem ipsum dolor sit amet.</p>
+                <h3>Rp. 50.000</h3>
             </div>
-            <div class="beranda-container">
-                <div class="beranda-content">
-                    <h1>Wajan Andalan</h1>
-                    <h3>Masak Lebih Mudah<br>Rasa Lebih Istimewa!</h3>
-                    <p>Dengan material premium dan proses produksi modern, kami menghadirkan peralatan masak yang tahan lama, ringan, dan efisien dalam menghantarkan panas.</p>
-                    <button class="btn">Beli Sekarang</button>
-                </div>
-                <div class="beranda-img">
-                    <img src="img/content 1.jpg" alt="">
-                </div>
+        </div>
+        <div class="catalog-item fade-up">
+            <img src="img/wajan 1.png" class="catalog-image" alt="Produk 2">
+            <div class="catalog-info">
+                <h2>Wajan</h2>
+                <p>Lorem ipsum dolor sit amet.</p>
+                <h3>Rp. 50.000</h3>
             </div>
-        </section>
-        
-        <!-- beranda end -->
-
-        <!-- tentang -->
-        <section class="about-section" id="about">
-            <div class="product-header">
-                <h2>Tentang Kami</h2>
+        </div>
+        <div class="catalog-item fade-up">
+            <img src="img/wajan 1.png" class="catalog-image" alt="Produk 3">
+            <div class="catalog-info">
+                <h2>Wajan</h2>
+                <p>Lorem ipsum dolor sit amet.</p>
+                <h3>Rp. 50.000</h3>
             </div>
-        
-            <div class="about-container">
-                <div class="about-image">
-                    <img src="img/image about.png" alt="Produk WL Aluminium">
-                </div>
-                <div class="about-content">
-                    <h3>Dari Pabrik Kami ke<br> Dapur Anda</h3>
-                    <p>
-                        Kami, WL Aluminium, telah berdiri sejak 1975, menghadirkan peralatan masak aluminium
-                        berkualitas tinggi untuk memenuhi kebutuhan dapur masyarakat Indonesia. Dengan pengalaman
-                        lebih dari empat dekade, kami terus berinovasi untuk menciptakan produk yang kuat, tahan
-                        lama, dan aman digunakan.
-                    </p>
-                </div>
+        </div>
+        <div class="catalog-item fade-up">
+            <img src="img/wajan 1.png" class="catalog-image" alt="Produk 4">
+            <div class="catalog-info">
+                <h2>Wajan</h2>
+                <p>Lorem ipsum dolor sit amet.</p>
+                <h3>Rp. 50.000</h3>
             </div>
-        </section>
-        <!-- tentang end -->
-
-        <!-- produk terlaris start -->   
-        <section class="product-section">
-            <div class="product-header">
-                <h2>Produk Terlaris</h2>
+        </div>
+        <div class="catalog-item fade-up">
+            <img src="img/wajan 1.png" class="catalog-image" alt="Produk 5">
+            <div class="catalog-info">
+                <h2>Wajan</h2>
+                <p>Lorem ipsum dolor sit amet.</p>
+                <h3>Rp. 50.000</h3>
             </div>
-            <div class="product-container">
-                <div class="product-card">
-                    <img src="img/wajan 1.png" alt="Wajan Kecil" class="product-image">
-                    <div class="product-info">
-                        <h2>Wajan Kecil</h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
-                        <h3>Rp.50.000</h3>
-                        <button class="buy-button">Beli Sekarang</button>
-                    </div>
-                </div>
-            
-                <div class="product-card">
-                    <div class="product-info">
-                        <h2>Wajan Besar</h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
-                        <h3>Rp.80.000</h3>
-                        <button class="buy-button">Beli Sekarang</button>
-                    </div>
-                    <img src="img/wajan 1.png" alt="Wajan Besar" class="product-image">
-                </div>
+        </div>
+        <div class="catalog-item fade-up">
+            <img src="img/wajan 1.png" class="catalog-image" alt="Produk 6">
+            <div class="catalog-info">
+                <h2>Wajan</h2>
+                <p>Lorem ipsum dolor sit amet.</p>
+                <h3>Rp. 50.000</h3>
             </div>
-            
-        </section>
-        
-        <!-- produk terlaris end -->
+        </div>
+    </div>
+</section>
+<!-- produk kami end -->
 
 
-      <!-- produk kami start -->
-        <section class="catalog-wrapper" id="produk">
-            <div class="product-header">
-                <h2>Produk Kami</h2>
-            </div>
-         
-            <div class="catalog-container">
-                <div class="catalog-item">
-                    <img src="img/wajan 1.png" class="catalog-image" alt="Produk 1">
-                    <div class="catalog-info">
-                        <h2>Wajan</h2>
-                        <p>Lorem ipsum dolor sit amet.</p>
-                        <h3>Rp. 50.000</h3>
-                    </div>
-                </div>
-                <div class="catalog-item">
-                    <img src="img/wajan 1.png" class="catalog-image" alt="Produk 2">
-                    <div class="catalog-info">
-                        <h2>Wajan</h2>
-                        <p>Lorem ipsum dolor sit amet.</p>
-                        <h3>Rp. 50.000</h3>
-                    </div>
-                </div>
-                <div class="catalog-item">
-                    <img src="img/wajan 1.png" class="catalog-image" alt="Produk 3">
-                    <div class="catalog-info">
-                        <h2>Wajan</h2>
-                        <p>Lorem ipsum dolor sit amet.</p>
-                        <h3>Rp. 50.000</h3>
-                    </div>
-                </div>
-                <div class="catalog-item">
-                    <img src="img/wajan 1.png" class="catalog-image" alt="Produk 4">
-                    <div class="catalog-info">
-                        <h2>Wajan</h2>
-                        <p>Lorem ipsum dolor sit amet.</p>
-                        <h3>Rp. 50.000</h3>
-                    </div>
-                </div>
-                <div class="catalog-item">
-                    <img src="img/wajan 1.png" class="catalog-image" alt="Produk 5">
-                    <div class="catalog-info">
-                        <h2>Wajan</h2>
-                        <p>Lorem ipsum dolor sit amet.</p>
-                        <h3>Rp. 50.000</h3>
-                    </div>
-                </div>
-                <div class="catalog-item">
-                    <img src="img/wajan 1.png" class="catalog-image" alt="Produk 6">
-                    <div class="catalog-info">
-                        <h2>Wajan</h2>
-                        <p>Lorem ipsum dolor sit amet.</p>
-                        <h3>Rp. 50.000</h3>
-                    </div>
-                </div>
-            </div>
-        </section>
-        
 
-        <!-- produk kami end -->
 
-       
 
 
     <!-- Carousel -->
@@ -178,15 +179,20 @@
         <div class="product-header">
             <h2>Galeri Kemitraan</h2>
         </div>
-        
+
         <div class="carousel-container">
             <div class="slides">
                 <div class="slide">
                     <img src="img/content carousel.png" alt="Peluncuran Wajan Gula">
                     <div class="slide-content">
                         <h3>Peluncuran Produk “Wajan Gula” oleh UKM Jogja WL Aluminium</h3>
-                        <p>WL Aluminium Yogyakarta resmi meluncurkan produk baru "Wajan Gula" pada 2 Juni 2016 di pabrik WL Aluminium. Acara ini diresmikan oleh Kepala Dinas Perindagkop DIY, Ir. Budi Antono, M.Si, dan dihadiri oleh ketua koperasi gula semut Kulonprogo serta 10 pengrajin gula semut.
-                            Produk ini diharapkan membantu pengrajin gula semut yang kesulitan mendapatkan wajan khusus tersebut. WL Aluminium memberikan sampel gratis untuk uji coba kualitas. Dengan sekitar 1700 pengrajin gula semut di Kulonprogo, diharapkan terjalin kerjasama berkelanjutan antara UKM Aluminium dan pengrajin gula semut.</p>
+                        <p>WL Aluminium Yogyakarta resmi meluncurkan produk baru "Wajan Gula" pada 2 Juni 2016 di pabrik
+                            WL Aluminium. Acara ini diresmikan oleh Kepala Dinas Perindagkop DIY, Ir. Budi Antono, M.Si,
+                            dan dihadiri oleh ketua koperasi gula semut Kulonprogo serta 10 pengrajin gula semut.
+                            Produk ini diharapkan membantu pengrajin gula semut yang kesulitan mendapatkan wajan khusus
+                            tersebut. WL Aluminium memberikan sampel gratis untuk uji coba kualitas. Dengan sekitar 1700
+                            pengrajin gula semut di Kulonprogo, diharapkan terjalin kerjasama berkelanjutan antara UKM
+                            Aluminium dan pengrajin gula semut.</p>
                     </div>
                 </div>
                 <div class="slide">
@@ -207,120 +213,128 @@
                     <img src="img/content carousel.png" alt="Peluncuran Wajan Gula">
                     <div class="slide-content">
                         <h3>Peluncuran Produk “Wajan Gula” oleh UKM Jogja WL Aluminium</h3>
-                        <p>WL Aluminium Yogyakarta resmi meluncurkan produk baru "Wajan Gula" pada 2 Juni 2016 di pabrik WL Aluminium...</p>
+                        <p>WL Aluminium Yogyakarta resmi meluncurkan produk baru "Wajan Gula" pada 2 Juni 2016 di pabrik
+                            WL Aluminium...</p>
                     </div>
                 </div>
                 <div class="slide">
                     <img src="img/content carousel.png" alt="Peluncuran Wajan Gula">
                     <div class="slide-content">
                         <h3>Peluncuran Produk “Wajan Gula” oleh UKM Jogja WL Aluminium</h3>
-                        <p>WL Aluminium Yogyakarta resmi meluncurkan produk baru "Wajan Gula" pada 2 Juni 2016 di pabrik WL Aluminium...</p>
+                        <p>WL Aluminium Yogyakarta resmi meluncurkan produk baru "Wajan Gula" pada 2 Juni 2016 di pabrik
+                            WL Aluminium...</p>
                     </div>
                 </div>
                 <div class="slide">
                     <img src="img/content carousel.png" alt="Peluncuran Wajan Gula">
                     <div class="slide-content">
                         <h3>Peluncuran Produk “Wajan Gula” oleh UKM Jogja WL Aluminium</h3>
-                        <p>WL Aluminium Yogyakarta resmi meluncurkan produk baru "Wajan Gula" pada 2 Juni 2016 di pabrik WL Aluminium...</p>
+                        <p>WL Aluminium Yogyakarta resmi meluncurkan produk baru "Wajan Gula" pada 2 Juni 2016 di pabrik
+                            WL Aluminium...</p>
                     </div>
                 </div>
             </div>
 
-          <!-- Navigasi -->
-<div class="navigation">
-    <button class="nav-btn left" onclick="prevSlide()">&#10094;</button>
-    <button class="nav-btn right" onclick="nextSlide()">&#10095;</button>
-</div>
+            <!-- Navigasi -->
+            <div class="navigation">
+                <button class="nav-btn left" onclick="prevSlide()">&#10094;</button>
+                <button class="nav-btn right" onclick="nextSlide()">&#10095;</button>
+            </div>
 
     </section>
+    <!-- Carousel end -->
 
-    <!-- testmoni -->
-    <section class="testimoni" id="testimoni">
-        <div class="testimonial-container">
-            <div class="product-header">
+       <!-- testimoni -->
+       <section class="testimoni" id="testimoni">
+        <div class="testimonial-container fade-up">
+            <div class="product-header fade-up">
                 <h2>Testimoni</h2>
             </div>
             <div class="testimonial-cards">
-                <div class="testimonial-card">
+                <div class="testimonial-card fade-up">
                     <div class="profile-info">
-                        <img src="img/adrian.png" alt="Maxn Raval" class="profile-pic">
+                        <img src="img/adrian.png" alt="Maxn Raval" class="profile-pic" />
                         <div>
                             <h3 class="profile-name">Maxn Raval</h3>
                             <div class="stars">★★★★★</div>
                         </div>
                     </div>
-                    <p class="testimonial-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+                    <p class="testimonial-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
                 </div>
-                <div class="testimonial-card">
+                <div class="testimonial-card fade-up">
                     <div class="profile-info">
-                        <img src="img/raja.png" alt="Venely K" class="profile-pic">
+                        <img src="img/raja.png" alt="Venely K" class="profile-pic" />
                         <div>
                             <h3 class="profile-name">Venely K</h3>
                             <div class="stars">★★★★★</div>
                         </div>
                     </div>
-                    <p class="testimonial-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+                    <p class="testimonial-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
                 </div>
-                <div class="testimonial-card">
+                <div class="testimonial-card fade-up">
                     <div class="profile-info">
-                        <img src="img/fakhri.png" alt="Lii Thakur" class="profile-pic">
+                        <img src="img/fakhri.png" alt="Lii Thakur" class="profile-pic" />
                         <div>
                             <h3 class="profile-name">Lii Thakur</h3>
                             <div class="stars">★★★★★</div>
                         </div>
                     </div>
-                    <p class="testimonial-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+                    <p class="testimonial-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- footer -->
-
-    <footer>
-        <div class="footer-container">
-            <div class="footer-left">
+    <footer class="fade-up">
+        <div class="footer-container fade-up">
+            <div class="footer-left fade-up">
                 <h2>
-                    <img src="img/footer logo.png" alt="WL Aluminium" style="height: 40px;"> WL Aluminium
+                    <img src="img/footer logo.png" alt="WL Aluminium" style="height: 40px;" /> WL Aluminium
                 </h2>
                 <p>
-                    Kami berkomitmen menyediakan<br> produk aluminium berkualitas tinggi<br> dengan inovasi terbaik untuk industri<br> dan konstruksi.
-                    Hubungi kami untuk<br> solusi terbaik bagi kebutuhan Anda.
+                    Kami berkomitmen menyediakan<br /> produk aluminium berkualitas tinggi<br /> dengan inovasi terbaik
+                    untuk industri<br /> dan konstruksi. Hubungi kami untuk<br /> solusi terbaik bagi kebutuhan Anda.
                 </p>
             </div>
-            <div class="footer-center">
+            <div class="footer-center fade-up">
                 <h3>Hubungi Kami :</h3>
-
                 <div class="media-sosial">
                     <div class="social-media">
-                        <a href="http://"><img src="img/whatsapp.png" alt="WhatsApp"></a>
-                        <a href="http://"><img src="img/instagram.png" alt="Instagram"></a>
-                        <a href="http://"><img src="img/tiktok.png" alt="TikTok"></a>
-                    
+                        <a href="#"><img src="img/whatsapp.png" alt="WhatsApp" /></a>
+                        <a href="#"><img src="img/instagram.png" alt="Instagram" /></a>
+                        <a href="#"><img src="img/tiktok.png" alt="TikTok" /></a>
                     </div>
-                    <div class="social-icon">
-                        <img src="img/tokopedia-seeklogo 1.png" alt="Tokopedia">
-                        <img src="img/shopee.png" alt="Shopee">
+                    <div class="social-media">
+                        <a href="#"><img src="img/tiktok.png" alt="TikTok" /></a>
+                        <a href="#"><img src="img/tokopedia-seeklogo 1.png" alt="tokopedia" /></a>
+                       
                     </div>
-                    
                 </div>
-                  
-              
-              
             </div>
-            <div class="footer-right">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3952.710980972256!2d110.37667657500533!3d-7.820385292200356!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e7a570a05bdcab9%3A0xe9109e3df96279b3!2sWL%20Aluminium!5e0!3m2!1sid!2sid!4v1741224687266!5m2!1sid!2sid" width="600" height="450" style="border:0;"
-                 allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <div class="footer-right fade-up">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3952.710980972256!2d110.37667657500533!3d-7.820385292200356!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e7a570a05bdcab9%3A0xe9109e3df96279b3!2sWL%20Aluminium!5e0!3m2!1sid!2sid!4v1741224687266!5m2!1sid!2sid"
+                    width="600"
+                    height="450"
+                    style="border: 0;"
+                    allowfullscreen=""
+                    loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"
+                ></iframe>
             </div>
         </div>
-       
-        <p class="footer-bottom">&copy; 2025 PT. WL Aluminium. Semua Hak Dilindungi. <br> Kualitas Terbaik, Layanan Terpercaya.</p>
+        <p class="footer-bottom fade-up">
+            &copy; 2025 PT. WL Aluminium. Semua Hak Dilindungi. <br />
+            Kualitas Terbaik, Layanan Terpercaya.
+        </p>
     </footer>
     <script src="script.js">
-      
+
     </script>
 
-        
-        
+
+
 </body>
+
 </html>
