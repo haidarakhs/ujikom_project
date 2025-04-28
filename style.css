@@ -715,6 +715,7 @@ main {
 .catalog-info {
     color: white;
     text-align: left;
+    margin-top: 1rem;
 }
 
 .catalog-info h2 {
